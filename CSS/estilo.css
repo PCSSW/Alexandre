@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: Roboto;
+  font-weight: 400;
+}
+:root {
+  --primary:#455A64;
+  --secondary:#00FF19;
+  --third:#0038FF;
+  --fourth: #FFB74D;
+  --fourth-light:#B3B70E;
+  --white: #ffff;
+  --black: #000;
+}
+header {
+  display: flex;
+  border-bottom: 0.5rem solid var(--secondary);
+}
+header picture img {
+  height: 6rem;
+}
+header nav{
+    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    margin: 0 1.5rem;
+  }
+  header nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+  color: var(--primary);
+
+
+  }
+  main {
+    min-height: 70vh;
+  }
+  footer {
+    background-color: var(--secondary);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+  footer > div{
+      display:flex;
+      align-items: center ;
+  }
+ .content{
+
+    width: 100% ;
+    max-width: 1372px ;
+    margin: 0 auto ;
+ }
+ /*Specific main*/
+ main > picture.main > img {
+
+    width: 100% ;
+ }
+ main > section.main{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+ }
